@@ -53,7 +53,7 @@ Assume:
 - You can perform historical buy or sell operations  
 - You are limited to 3 transactions  
 
-Determine which transactions you would perform to maximize your wealth as of today.
+Determine the maximum profit achievable as of today.
 
 
 ## Evaluation Criteria
@@ -61,4 +61,5 @@ Determine which transactions you would perform to maximize your wealth as of tod
 - Correctness and clarity of the reconstruction algorithm  
 - Correctness of the resulting OUTPUT reconstruction result  
 - Quality and critical evaluation of the trading strategy and assumptions
+
 
