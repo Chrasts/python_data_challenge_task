@@ -39,8 +39,8 @@ python "reconstruct_output.py"
 Output:
 OUTPUT.xlsx
 
-Solution 3:
-python "solution 3.py"
+trading_strategy:
+python "trading_strategy_dp.py"
 
 Console output:
 - Max wealth
