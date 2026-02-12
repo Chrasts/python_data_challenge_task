@@ -88,7 +88,7 @@ Multi-Entity Support:
 Scripts are not fully generalized for multiple companies or currencies in one run.
 For multi-currency datasets it should choose one and convert, or group by currencies and deduplicate by triple of timestamp, company name and currency.
 
-
+Current point-in-time price selection uses the latest row with `S_FROM <= T` (ignores `S_TO` / `TS_TO`). This is only safe if intervals are gap-free and non-overlapping. Future: select rows by validity window (`S_FROM <= T < S_TO`, optionally `TS_FROM <= ts < TS_TO`) and add gap/overlap validation.
 
 Input Configurability:
 Input filename is currently hardcoded.
