@@ -27,9 +27,9 @@ def main():
     ignore_index=True
 )
 
-    # 8) zbaveni se duplikatu - pro stejna s_from se necha to s nejnovejsim ts_from
-    df = df.sort_values(["S_FROM", "TS_FROM"])
-    df = df.drop_duplicates(subset=["S_FROM"], keep="last")
+    # 8) zbaveni se duplikatu - pro rows se stenymi dvojicemi (S_FROM, COMPANY) se necha to s nejnovejsim ts_from
+    df = df.sort_values(["COMPANY", "CURRENCY", "S_FROM", "TS_FROM"])
+    df = df.drop_duplicates(subset=["COMPANY", "CURRENCY", "S_FROM"], keep="last")
 
     # ------------------------ NEW pro reseni 3 ---------------------------------------------------
 
@@ -65,3 +65,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
