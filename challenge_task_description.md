@@ -48,7 +48,7 @@ Determine how many rows would exist in OUTPUT today (if it still existed) based 
 
 ### 3. Trading Strategy Optimization Scenario
 Assume:
-- You currently have CHF 100,000  
+- You currently have EUR 100,000  
 - You have access to historical share prices  
 - You can perform historical buy or sell operations  
 - You are limited to 3 transactions  
@@ -61,3 +61,4 @@ Determine which transactions you would perform to maximize your wealth as of tod
 - Correctness and clarity of the reconstruction algorithm  
 - Correctness of the resulting OUTPUT reconstruction result  
 - Quality and critical evaluation of the trading strategy and assumptions
+
