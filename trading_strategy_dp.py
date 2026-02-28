@@ -51,7 +51,7 @@ def main():
         trans2 = max(trans2, trans1 * p)    # stejne jako trans1, ale akcie naopak prodavam a merim finance.
         trans3  = max(trans3,  trans2 / p)   # analogicky k trans1
 
-    p_today = prices[-1]  # cena akcii v oslednim datu ("dnes").
+    p_today = prices[-1]  # cena akcii v poslednim datu ("dnes").
 
     wealth0 = start                  # pocatecni stav financi
     wealth1 = trans1 * p_today       # pocet financi po prvni transakci (v prepoctu podle "dnesni" ceny akcii)
@@ -65,4 +65,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
