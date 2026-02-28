@@ -10,7 +10,7 @@ def first_day_of_month(d) -> pd.Timestamp:
 def first_day_of_next_month(d) -> pd.Timestamp:
     t = pd.Timestamp(d)
     if t.month == 12:
-        return pd.Timestamp(t.year + 1, 1, 1) # "if" rewici prechod mezi roky
+        return pd.Timestamp(t.year + 1, 1, 1) # "if" resici prechod mezi roky
     return pd.Timestamp(t.year, t.month + 1, 1)
 
     # 3) nacteni inputu
@@ -102,4 +102,5 @@ def main():
 
 if __name__ == "__main__": # brani tomu, aby se main spouwtelo pri importu (napad AI)
     main()
+
 
